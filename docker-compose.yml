@@ -9,17 +9,16 @@ web:
   links:
     - mysql
   environment:
-    MYSQL_DATABASE: website
-    MYSQL_USER: web
-    MYSQL_PASSWORD: webwebwebweb
-  command: sh ./db/build.sh
+    MYSQL_DATABASE: rms
+    MYSQL_USER: thieule
+    MYSQL_PASSWORD: password
 
 mysql:
   image: mysql:5.7
   environment:
     MYSQL_ROOT_PASSWORD: root
-    MYSQL_DATABASE: website
-    MYSQL_USER: web
-    MYSQL_PASSWORD: webwebwebweb
+    MYSQL_DATABASE: rms
+    MYSQL_USER: thieule
+    MYSQL_PASSWORD: password
   ports:
     - 3306

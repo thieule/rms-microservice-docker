@@ -74,5 +74,6 @@ RUN \
 
   `# Clean YUM caches to minimise Docker image size... #` \
   yum clean all && rm -rf /tmp/yum*
-
+RUN WORKDIR /var/www
+RUN composer create-project thieule/micro-service-template
 ADD container-files /
