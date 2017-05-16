@@ -2,7 +2,7 @@
 # million12/nginx-php
 #
 FROM million12/nginx:latest
-MAINTAINER Marcin Ryzycki <marcin@m12.io>
+MAINTAINER ThieuLe <quangthieuagu@gmail.com>
 
 ENV \
   STATUS_PAGE_ALLOWED_IP=127.0.0.1
